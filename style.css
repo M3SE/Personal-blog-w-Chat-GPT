@@ -1,0 +1,96 @@
+/* General body styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    color: #333;
+}
+
+/* Header styles */
+header {
+    background: #ff0026;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Navigation bar styles */
+nav {
+    background: #333;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* Main content area */
+section {
+    margin: 20px;
+    padding: 20px;
+    background: white;
+    border: 1px solid #ccc;
+}
+
+article {
+    margin-bottom: 20px;
+}
+
+/* Putting paragraph beside image */
+.content-container {
+    display: flex;
+    justify-content: flex-start; /* Align items horizontally */
+}
+
+.content-container img {
+    width: 50%; /* Adjust the size of the image */
+    margin-right: 10px; /* Add some space between the image and the paragraph */
+}
+
+.content-container p {
+    flex: 1; /* Allows the paragraph to fill the remaining space */
+    align-self: flex-start; /* Aligns the paragraph at the start of the container, towards the top */
+    margin-top: 10px; /* Adjust this value to move the paragraph up slightly from center */
+}
+
+
+/* Footer styles */
+footer {
+    background: #333;
+    color: #ffffff;
+    text-align: center;
+    padding: 1px 5px;
+    box-sizing: border-box; /* This ensures padding and border are included in the height */
+    margin: 10; /* Adjust margin as needed */
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    font-size: 10px; /* smaller text */
+    }
+    
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+    nav ul li {
+        display: block;
+        text-align: center;
+    }
+
+    footer {
+        position: relative;
+    }
+}
